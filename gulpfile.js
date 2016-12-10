@@ -8,7 +8,7 @@ const paths = {
   html : ['src/**/*.html'],
   styles : ['src/**/css/**/*.css'],
   scripts : ['src/**/js/**/*.js'],
-  images : ['src/img/*', 'src/views/images/*'],
+  images : ['src/**/*.{jpg,png}'],
   dist : 'dist',
   site : 'https://carltonwin8.github.io/frontend-nanodegree-mobile-portfolio/'
 }

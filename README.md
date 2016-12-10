@@ -39,7 +39,10 @@ Use gulp to automate the release work flow.
 
 #### Images
 
-Resized index.html images, that PageSpeed Insights flagged, by the recommended amount.
+Resized index.html images, that PageSpeed Insights flagged, using GIMP.
+  - profilepic.jpg - gimp 6%, 4290 bytes final size
+  - pizza.jpg - gimp 4%, 77682 bytes final size
+
 
 #### CSS &amp; HTML
 
