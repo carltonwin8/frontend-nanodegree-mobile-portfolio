@@ -1,6 +1,8 @@
 'use strict';
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+const inlinesource = require('gulp-inline-source');
+const htmlmin = require('gulp-htmlmin');
 
 const paths = {
   html : ['src/**/*.html'],
@@ -13,6 +15,13 @@ const paths = {
 
 gulp.task ('html', function () {
   return gulp.src(paths.html, {base: "./src"})
+    .pipe(inlinesource())
+    .pipe(htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+      minifyCSS: true,
+      minifyJS: true
+     }))
     .pipe(gulp.dest(paths.dist))
 });
 
