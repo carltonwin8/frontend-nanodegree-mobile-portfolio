@@ -1,0 +1,23 @@
+{
+  "name": "frontend-nanodegree-mobile-portfolio",
+  "version": "1.0.0",
+  "description": "The original/pre-fork readme can be found [here](src/README.md).",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carltonwin8/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "author": "Carlton Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carltonwin8/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/carltonwin8/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1"
+  }
+}
