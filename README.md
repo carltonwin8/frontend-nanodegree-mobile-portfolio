@@ -39,10 +39,7 @@ Use gulp to automate the release work flow.
 
 #### Images
 
-Resized index.html images, that PageSpeed Insights flagged, using GIMP.
-  - profilepic.jpg - gimp 6%, 4290 bytes final size
-  - pizza.jpg - gimp 4%, 77682 bytes final size
-
+Resized index.html images, that PageSpeed Insights flagged.
 
 #### CSS &amp; HTML
 
@@ -51,6 +48,21 @@ Due to PageSpeed Insights flagging CSS issues and the following changes are made
   - add async to analytics
   - add media query to print
   - remove google fonts
-  - include style.css in the index.html file - via gulp automation
+  - inlined style.css using gulp automation
 
 Add gulp process to shrink the HTML, CSS and JS.
+
+#### Pizza
+
+Made the following modifications to pizza.html.
+
+  - add viewport
+
+The main.js for the pizza.html was modified as follows:
+
+  - In changePizzaSizes() moved all code that does not change during
+    each iteration outside the loop. Did this with minimal code diff.
+  - During pizza generation move document.getElementById("randomPizzas")
+    outside the loop as it only needs to be done once.
+  - During updatePositions() moved the reading of document.body.scrollTop
+    outside the loop as it also only needs to be done once.
